@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# FRAYM
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -34,6 +34,27 @@ npm run reset-project
 ```
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Build and deploy the web app
+
+Create the production web bundle with:
+
+```bash
+npm run build:web
+```
+
+The output is written to `dist/`. To preview that production bundle locally:
+
+```bash
+npx serve dist
+```
+
+For a static host such as Cloudflare Pages, use these project settings:
+
+- Build command: `npm run build:web`
+- Output directory: `dist`
+
+Fraym currently keeps the active run in memory in the browser. It does not require a database, API, authentication, or server-side runtime.
 
 ## Learn more
 

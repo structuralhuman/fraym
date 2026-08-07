@@ -57,6 +57,11 @@ export default function Index() {
         keyboardShouldPersistTaps="handled"
       >
         <View style={styles.content}>
+          <Text style={styles.description}>
+            FRAYM is a structured thinking tool that helps you separate what
+            you control from what you don’t and decide what to do next.
+          </Text>
+
           <Text style={styles.step}>1 of 5</Text>
           <Text style={styles.title}>Event</Text>
 
@@ -101,6 +106,12 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#666666",
     marginBottom: 8,
+  },
+  description: {
+    fontSize: 16,
+    lineHeight: 24,
+    color: "#4A4A4A",
+    marginBottom: 24,
   },
   title: {
     fontSize: 28,
